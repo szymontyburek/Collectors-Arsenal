@@ -1,0 +1,216 @@
+h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/*(d1) div box*/
+h2{
+  text-align: center;
+  margin-bottom: -10px;
+  font-size: 20px;
+}
+.d1{
+  margin-left: 3px;
+  float: left;
+}
+.d1 input, .d1 label{
+  line-height: 90px;
+  font-size: 15px;
+}
+
+/*img + text*/
+.d3{
+  float: left;
+  padding: 10px;
+  line-height: 30px;
+}
+img{
+  padding-top: 60px;
+  width: 180px;
+  height: 250px;
+  float: right;
+}
+
+/*user input textlabel and place order button*/
+.quantity label{
+  font-weight: bold;
+  font-size: 25px;
+}
+.quantity input{
+  width: 45px;
+  height: 25px;
+}
+button{
+font-weight: bold;
+font-size: 25px;
+padding: 5px;
+}
+/*stack the quantity label and place order button on top of each other*/
+.stackVertically{
+  display: grid;
+  grid-template-rows: auto;
+  float: left;
+  padding-left: 30%;
+  padding-bottom: 10px;
+}
+.quantity{
+  margin-bottom: 10px;
+}
+
+/*make the picture bigger and shift it slightly to the left when the dimensions below are fulfilled*/
+@media only screen and (min-width: 500px){
+  img{
+    padding: 20px 10px 5px 5px;
+    width: 250px;
+    height: 350px;
+  }
+  p{
+    line-height: 50px;
+    padding: 25px;
+  }
+}
+/*instead of using a vertical photo, use a horizontal photo*/
+@media only screen and (min-width: 768px) {
+  .quantity, .placeOrder{
+    padding-top: 25px;
+  }
+  img{
+    width: 65%;
+    height: auto;
+    padding-top: 45px;
+  }
+  .d1{
+    margin-top: 10px;
+  }
+  .d1 input, .d1 label{
+    font-size: 20px;
+    line-height: 85px;
+  }
+  .d3{
+    font-size: 20px;
+  }
+  h2{
+    padding-left: 15px;
+    font-size: 25px;
+  }
+  .stackVertically{
+    padding-left: 35%
+  }
+}
+@media only screen and (min-height: 1100px){
+  /*code in javascript makes the text longer*/
+  h1{
+    font-size: 45px;
+  }
+  h2{
+    font-size: 35px;
+    text-align: center;
+  }
+  .quantity label{
+    font-size: 35px;
+  }
+  .quantity input{
+    width: 45px;
+    height: 35px;
+  }
+  button{
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .d1{
+    line-height: 160px;
+  }
+  .d1 input, .d1 label{
+    font-size: 30px;
+  }
+  img{
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  input{
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1500px){
+  /*switch back to vertical pic and put text next to it*/
+  img{
+    width: 35%;
+    height: auto;
+    padding-top: 50px;
+  }
+  .d1{
+    line-height: 180px;
+  }
+  .d3{
+    width: 35%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    float: right;
+    padding-top: 0;
+  }
+  p{
+    line-height: 55px;
+  }
+  .columns{
+    display: inline;
+    grid-template-columns: auto;
+  }
+  .stackVertically{
+    padding-top: 5em;
+    padding-left: 38%;
+  }
+}
+/*from here on, it is adjusting line-height, padding, and font size for the text, radio button labels, and quantity/place order button at the bottom*/
+@media only screen and (min-width: 1700px){
+  p{
+    line-height: 70px;
+  }
+  .d1 input, .d1 label{
+    line-height: 220px;
+    font-size: 40px;
+  }
+  .quantity label{
+    font-size: 75px;
+  }
+  .quantity input{
+    width: 75px;
+    height: 80px;
+  }
+  button{
+    font-size: 75px;
+  }
+  input{
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1900px){
+  p{
+    line-height: 70px;
+    font-size: 38px;
+  }
+  .d1 input, .d1 label{
+    line-height: 220px;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 2200px){
+  p{
+    line-height: 70px;
+    font-size: 38px;
+  }
+  .d1 input, .d1 label{
+    line-height: 220px;
+    font-size: 40px;
+  }
+  .stackVertically{
+    padding-left: 30%;
+  }
+}

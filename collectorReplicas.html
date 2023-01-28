@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weapon Replicas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collectorReplicas.css">
+    <script src="collectorReplicas.js"></script>
+  </head>
+  <body onload="PicsAndText()" onresize="PicsAndText()">
+    <section>
+      <h1>Collector Items</h1>
+    </section>
+    <section class="layout">
+      <h2>Items Up For Sale</h2>
+        <div class="d1" id="closeNewWindow">
+          <input onchange="PicsAndText()" type="radio" id="batarang" name="sup_auction" value="BATARANG" checked>
+          <label for="batarang">Batarang($100)</label> <br>
+          <input onchange="PicsAndText()" type="radio" id="webShooters" name="sup_auction" value="WEBSHOOTERS">
+          <label for="webShooters">Web Shooters($150)</label> <br>
+          <input onchange="PicsAndText()" type="radio" id="mjolnir" name="sup_auction" value="MJOLNIR">
+          <label for="mjolnir">Mjolnir($200)</label> <br>
+          <input onchange="PicsAndText()" type="radio" id="blades" name="sup_auction" value="BLADES">
+          <label for="blades">Blades Of Chaos($250)</label>
+        </div>
+        <div class="columns">
+          <div class="d2">
+            <img id="img" src="batarangVertical.jpg" alt="">
+          </div>
+          <div class="d3">
+            <p id="p">Batarangs are mainly used as ranged weapons to subdue or handicap enemies from afar. Batarangs can also be used to break objects, such as glass and pipes. Precisely thrown Batarangs are capable of disarming enemies or disrupting weapons. In some stories, Batman has added sedatives to his Batarangs to incapacitate foes immediately or over time. Just like in the comics, these replicas are made of a steel alloy and stylized/shaped in the form of a bat.</p>
+          </div>
+        </div>
+    </section>
+    <section class="stackVertically">
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity">
+      </div>
+      <div class="placeOrder">
+        <button id="compute" onclick="quantityCompute()" type="button" name="button">Place Order</button>
+      </div>
+    </section>
+  </body>
+</html>
