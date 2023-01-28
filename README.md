@@ -23,4 +23,4 @@ SOLUTIONS:
 
 Discovered, studied, and implemented JavaScript to create dynamically updating content within the site
 
-Experimented and executed responsive web design
+Experimented with and executed Responsive Web Design
